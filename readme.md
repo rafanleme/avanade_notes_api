@@ -36,9 +36,11 @@ Os exemplos dos endpoints estão descritos abaixo
 
     http://localhost:3333/notes
 
+    {"text": "O texto da nota"}
+
 ### Response
 
-    status 201
+    status 201 CREATED
 
     {"id": 3,"date": "2022-01-05T22:56:42.089Z","text": "Lembrar de alguma coisa"}
 
@@ -67,7 +69,7 @@ Os exemplos dos endpoints estão descritos abaixo
 ### Response
 
     status 404
-    
+
     {"erro": "Nota não encontrada"}
 
 ## DELETE nota específica
@@ -81,7 +83,7 @@ Os exemplos dos endpoints estão descritos abaixo
 ### Response
 
     status 204
-    
+
 ## PUT alterar uma nota específica
 
 ### Request
@@ -93,6 +95,5 @@ Os exemplos dos endpoints estão descritos abaixo
 ### Response
 
     status 200
-    
-    {"id": 3,"date": "2022-01-05T22:56:42.089Z","text": "Lembrar de alguma coisa"}
 
+    {"id": 3,"date": "2022-01-05T22:56:42.089Z","text": "Lembrar de alguma coisa"}
